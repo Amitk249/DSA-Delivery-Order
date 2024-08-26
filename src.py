@@ -32,7 +32,7 @@ class DeliveryOrderAssigner:
 
         # Sort by distance and get the two closest orders
         distances.sort()
-        closest_orders = [order for _, order in distances[:2]]
+        closest_orders = [order for _, order in distances[:2]] # [(5,(1,2)), (5,(5,3)), (18,(1,2)), (18,(7,8))]
 
         return closest_orders
 
